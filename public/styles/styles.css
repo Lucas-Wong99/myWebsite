@@ -4,5 +4,8 @@ body {
 body header .title img {
   height: 100px;
 }
+body #projects-sec main .project img {
+  height: 200px;
+}
 
 /*# sourceMappingURL=styles.css.map */

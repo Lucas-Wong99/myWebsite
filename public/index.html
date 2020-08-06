@@ -22,7 +22,7 @@
         <h4>Full Stack Web Developer</h4>
       </div>
     </header>
-    <section class="about-me">
+    <section id="about-me">
       <div>
         <h2>About Me</h2>
         <p>
@@ -104,7 +104,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="skills-sec">
       <h2>Technical Skills</h2>
       <article class="skills">
         <h3>Languages</h3>
@@ -139,14 +139,77 @@
         </ul>
       </article>
     </section>
-    <section>
+    <section id="projects-sec">
       <h2>Projects</h2>
+      <main>
+        <div class="project">
+          <div>
+            <h3>Canopy</h3>
+            <img src="./docs/canopyDash.png" alt="canopy" />
+          </div>
+          <h5 class="tech-stack">
+            Front-end: React.js, Material UI Back-end: Firebase(Cloud Firestore
+            - NoSQL, Cloud Functions, Cloud Messaging)
+          </h5>
+          <p class="project-description">
+            A work-from-home teambuilding application that integrates positive
+            wellbeing and productivity habits with existing workflows, tangibly
+            showing group cohesion with tools tailored to each team member’s
+            needs.
+          </p>
+        </div>
+        <div class="project">
+          <div>
+            <h3>Scheduler</h3>
+            <img src="./docs/schedulerMain.png" alt="canopy" />
+          </div>
+          <h5 class="tech-stack">
+            Front-end: React.js, Sass Back-end: Node.js, Express.js, SQL
+            Testing: Jest, Storybook, Cypress
+          </h5>
+          <p class="project-description">
+            An interview scheduling application that allows user/students to
+            book an application with a specific interviewer at a designated time
+            slot. A user has the ability to update or delete an appointment.
+          </p>
+        </div>
+        <div class="project">
+          <div>
+            <h3>Viral Clean</h3>
+            <img src="./docs/viralClean.png" alt="canopy" />
+          </div>
+          <h5 class="tech-stack">
+            Front-end: HTML, Javascript, Jquery, Sass Back-end: Node,
+            Express.js, SQL
+          </h5>
+          <p class="project-description">
+            A buy and sell website that targets people who overbought personal
+            hygiene items in the recent pandemic(eg. toilet paper, lysol wipes,
+            hand sanitizer, etc...). A user can post an item to sell and a user
+            can also view other items with filters in order to purchase.
+          </p>
+        </div>
+      </main>
     </section>
-    <footer>
+    <footer id="contact">
       <h2>Contact</h2>
       <div>
         <p>lucaswong.ca@gmail.com</p>
         <p>778-580-6922</p>
+      </div>
+      <div class="icons">
+        <a href="https://twitter.com/lucaswong37"
+          ><i class="fab fa-twitter fa-5x"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/lucas-wong-b33602194/"
+          ><i class="fab fa-linkedin fa-5x"></i
+        ></a>
+        <a href="https://www.instagram.com/lucaswong17/"
+          ><i class="fab fa-instagram fa-5x"></i
+        ></a>
+        <a href="https://github.com/Lucas-Wong99"
+          ><i class="fab fa-github fa-5x"></i
+        ></a>
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
