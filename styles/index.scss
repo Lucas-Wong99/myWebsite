@@ -1,5 +1,7 @@
 body {
+  @import "_navBar";
   @import "_header";
   @import "_projects";
   background-color: lightgray;
+  margin: 0;
 }

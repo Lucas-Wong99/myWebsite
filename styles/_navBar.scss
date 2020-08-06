@@ -1,0 +1,22 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: red;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    margin: 0;
+
+    .nav-bar-item {
+      list-style: none;
+      text-decoration: none;
+      margin: 20px;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      color: black;
+    }
+  }
+}
