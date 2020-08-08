@@ -55,8 +55,114 @@ body header .title div h4 {
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }
+body #about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightpink;
+}
+body #about-me .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+body #about-me .intro h2 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-size: 40px;
+}
+body #about-me .intro p {
+  width: 60vw;
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  margin: 10px;
+  font-size: 20px;
+}
+body #about-me .hidden-info h3 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-size: 30px;
+}
+body #about-me .hidden-info .education {
+  margin: 15px;
+}
+body #about-me .hidden-info .education h4 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-size: 26px;
+}
+body #about-me .hidden-info .education .edu-info {
+  margin: 10px;
+}
+body #about-me .hidden-info .education .edu-info div {
+  display: flex;
+  justify-content: space-between;
+}
+body #about-me .hidden-info .education .edu-info div h5 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-size: 20px;
+}
+body #about-me .hidden-info .education .edu-info h6 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-size: 16px;
+}
+body #about-me .hidden-info .work-experience h4 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-size: 26px;
+}
+body #about-me .hidden-info .work-experience .work-info {
+  margin: 10px;
+}
+body #about-me .hidden-info .work-experience .work-info div {
+  display: flex;
+  justify-content: space-between;
+}
+body #about-me .hidden-info .work-experience .work-info div h5 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-size: 20px;
+}
+body #about-me .hidden-info .work-experience .work-info h6 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-size: 16px;
+}
+body #about-me .hidden-info .work-experience .work-info li {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-size: 14px;
+}
+body #skills-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightseagreen;
+}
+body #skills-sec main {
+  display: flex;
+}
+body #skills-sec main .skills {
+  background-color: lightskyblue;
+  margin: 0 20px 0 20px;
+}
+body #projects-sec {
+  background-color: lightyellow;
+}
+body #projects-sec h2 {
+  margin: 0;
+}
 body #projects-sec main .project img {
   height: 200px;
+}
+body #contact {
+  background-color: lightsalmon;
+}
+body #contact h2 {
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

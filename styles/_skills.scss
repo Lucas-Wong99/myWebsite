@@ -1,0 +1,13 @@
+#skills-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightseagreen;
+  main {
+    display: flex;
+    .skills {
+      background-color: lightskyblue;
+      margin: 0 20px 0 20px;
+    }
+  }
+}

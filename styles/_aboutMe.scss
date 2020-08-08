@@ -1,0 +1,81 @@
+@import "helpers";
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightpink;
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    h2 {
+      @include textStyling;
+      font-size: 40px;
+    }
+
+    p {
+      width: 60vw;
+      @include textStyling;
+      margin: 10px;
+      font-size: 20px;
+    }
+  }
+
+  .hidden-info {
+    h3 {
+      @include textStyling;
+      font-size: 30px;
+    }
+    .education {
+      margin: 15px;
+      h4 {
+        @include textStyling;
+        font-size: 26px;
+      }
+      .edu-info {
+        margin: 10px;
+        div {
+          display: flex;
+          justify-content: space-between;
+          h5 {
+            @include textStyling;
+            font-size: 20px;
+          }
+        }
+
+        h6 {
+          @include textStyling;
+          font-size: 16px;
+        }
+      }
+    }
+    .work-experience {
+      h4 {
+        @include textStyling;
+        font-size: 26px;
+      }
+      .work-info {
+        margin: 10px;
+        div {
+          display: flex;
+          justify-content: space-between;
+          h5 {
+            @include textStyling;
+            font-size: 20px;
+          }
+        }
+
+        h6 {
+          @include textStyling;
+          font-size: 16px;
+        }
+        li {
+          @include textStyling;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

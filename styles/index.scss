@@ -1,7 +1,10 @@
 body {
   @import "_navBar";
   @import "_header";
+  @import "_aboutMe";
+  @import "_skills";
   @import "_projects";
+  @import "_contact";
   background-color: lightgray;
   margin: 0;
 }
