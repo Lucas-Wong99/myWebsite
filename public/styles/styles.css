@@ -65,19 +65,26 @@ body #about-me .intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px;
+  padding-bottom: 60px;
 }
 body #about-me .intro h2 {
   font-family: "Roboto Slab", serif;
-  margin: 0;
+  margin: 60px 0 40px 0;
   font-size: 40px;
 }
 body #about-me .intro p {
-  width: 60vw;
   font-family: "Roboto Slab", serif;
   margin: 0;
+  width: 60vw;
   margin: 10px;
   font-size: 20px;
+}
+body #about-me .intro .show-info-button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: orangered;
+  cursor: pointer;
 }
 body #about-me .hidden-info h3 {
   font-family: "Roboto Slab", serif;
@@ -142,27 +149,94 @@ body #skills-sec {
   align-items: center;
   background-color: lightseagreen;
 }
+body #skills-sec h2 {
+  font-family: "Roboto Slab", serif;
+  margin: 60px 0 40px 0;
+  font-size: 40px;
+}
 body #skills-sec main {
   display: flex;
+  padding-bottom: 60px;
 }
 body #skills-sec main .skills {
   background-color: lightskyblue;
   margin: 0 20px 0 20px;
 }
 body #projects-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: lightyellow;
 }
 body #projects-sec h2 {
-  margin: 0;
+  font-family: "Roboto Slab", serif;
+  margin: 60px 0 40px 0;
+  font-size: 40px;
 }
-body #projects-sec main .project img {
-  height: 200px;
+body #projects-sec main .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 15px;
+  background-color: palegoldenrod;
+}
+body #projects-sec main .project div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #projects-sec main .project div h3 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+body #projects-sec main .project div img {
+  height: 500px;
 }
 body #contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: lightsalmon;
 }
 body #contact h2 {
-  margin: 0;
+  font-family: "Roboto Slab", serif;
+  margin: 60px 0 40px 0;
+  font-size: 40px;
+}
+body #contact .email-phone {
+  display: flex;
+}
+body #contact .email-phone p {
+  margin: 12px 10px 0 0;
+}
+body #contact .icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+  margin-top: 20px;
+}
+body #contact .icons .fa-twitter {
+  color: #00acee;
+}
+body #contact .icons .fa-linkedin {
+  color: #4875b4;
+}
+body #contact .icons .fa-instagram {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 80px;
+  border-radius: 10px;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+body #contact .icons .fa-github {
+  color: #838282;
 }
 
 /*# sourceMappingURL=styles.css.map */

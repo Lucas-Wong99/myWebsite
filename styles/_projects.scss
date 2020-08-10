@@ -1,12 +1,28 @@
+@import "helpers";
+
 #projects-sec {
+  @include centerColumn;
   background-color: lightyellow;
   h2 {
-    margin: 0;
+    @include sectionHeader;
   }
   main {
     .project {
-      img {
-        height: 200px;
+      @include centerColumn;
+      justify-content: center;
+      height: 100vh;
+      margin: 15px;
+      background-color: palegoldenrod;
+      div {
+        @include centerColumn;
+        h3 {
+          @include textStyling;
+          font-size: 30px;
+          margin-bottom: 50px;
+        }
+        img {
+          height: 500px;
+        }
       }
     }
   }

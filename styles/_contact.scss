@@ -1,6 +1,49 @@
+@import "helpers";
+
 #contact {
+  @include centerColumn;
   background-color: lightsalmon;
   h2 {
-    margin: 0;
+    @include sectionHeader;
+  }
+  .email-phone {
+    display: flex;
+    p {
+      margin: 12px 10px 0 0;
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin-top: 20px;
+
+    .fa-twitter {
+      color: #00acee;
+    }
+    .fa-linkedin {
+      color: #4875b4;
+    }
+    .fa-instagram {
+      display: inline-block;
+      color: #fff;
+      text-align: center;
+      width: 80px;
+      border-radius: 10px;
+      background: #d6249f;
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+    }
+    .fa-github {
+      color: #838282;
+    }
   }
 }
