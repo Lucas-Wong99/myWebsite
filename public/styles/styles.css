@@ -84,6 +84,7 @@ body #about-me .intro .show-info-button {
   border: none;
   border-radius: 10px;
   background-color: orangered;
+  outline: none;
   cursor: pointer;
 }
 body #about-me .hidden-info h3 {
@@ -159,14 +160,33 @@ body #skills-sec main {
   padding-bottom: 60px;
 }
 body #skills-sec main .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: lightskyblue;
   margin: 0 20px 0 20px;
+  width: 25vw;
+}
+body #skills-sec main .skills ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+body #skills-sec main .skills ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 50%;
+  margin: 10px;
+  height: 90px;
+  width: 90px;
+  list-style: none;
 }
 body #projects-sec {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightyellow;
+  background-color: palegoldenrod;
 }
 body #projects-sec h2 {
   font-family: "Roboto Slab", serif;
@@ -180,7 +200,7 @@ body #projects-sec main .project {
   justify-content: center;
   height: 100vh;
   margin: 15px;
-  background-color: palegoldenrod;
+  background-color: lightyellow;
 }
 body #projects-sec main .project div {
   display: flex;
