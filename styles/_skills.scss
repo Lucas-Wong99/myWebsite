@@ -2,10 +2,11 @@
 
 #skills-sec {
   @include centerColumn;
-  background-color: lightseagreen;
+  background-color: #6c7a89;
 
   h2 {
     @include sectionHeader;
+    color: #e0e7e9;
   }
   main {
     display: flex;
@@ -13,9 +14,14 @@
 
     .skills {
       @include centerColumn;
-      background-color: lightskyblue;
+      background-color: #416284;
+      border-radius: 10px;
       margin: 0 20px 0 20px;
       width: 25vw;
+
+      h3 {
+        color: #e0e7e9;
+      }
 
       ul {
         display: flex;
@@ -25,11 +31,12 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          border: solid 1px black;
+          border: solid 1px #e0e7e9;
           border-radius: 50%;
           margin: 10px;
           height: 90px;
           width: 90px;
+          color: #e0e7e9;
           list-style: none;
         }
       }

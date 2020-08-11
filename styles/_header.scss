@@ -2,14 +2,14 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 70px;
-  background-color: lightgreen;
+  background-color: #a3c6c4;
   height: 100vh;
   .title {
     display: flex;
     align-items: center;
     margin-top: 50px;
     height: 350px;
-
+    opacity: 0;
     img {
       height: 350px;
       width: 350px;

@@ -2,27 +2,73 @@
 
 #projects-sec {
   @include centerColumn;
-  background-color: palegoldenrod;
-  h2 {
-    @include sectionHeader;
-  }
-  main {
-    .project {
+
+  .project {
+    @include centerColumn;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    div {
       @include centerColumn;
-      justify-content: center;
-      height: 100vh;
-      margin: 15px;
-      background-color: lightyellow;
-      div {
-        @include centerColumn;
-        h3 {
-          @include textStyling;
-          font-size: 30px;
-          margin-bottom: 50px;
-        }
-        img {
-          height: 500px;
-        }
+
+      img {
+        height: 500px;
+      }
+    }
+
+    .tech-stack {
+      margin: 5px;
+      font-size: 20px;
+    }
+    .project-description {
+      width: 70vw;
+      font-size: 16px;
+    }
+  }
+
+  #canopy {
+    background-color: #568a87;
+    div {
+      h3 {
+        @include textStyling;
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: white;
+      }
+    }
+    .tech-stack {
+      color: white;
+    }
+    .project-description {
+      color: white;
+    }
+  }
+
+  #scheduler {
+    background-color: #354649;
+    div {
+      h3 {
+        @include textStyling;
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: white;
+      }
+    }
+    .tech-stack {
+      color: white;
+    }
+    .project-description {
+      color: white;
+    }
+  }
+
+  #viral-clean {
+    background-color: #a3c6c4;
+    div {
+      h3 {
+        @include textStyling;
+        font-size: 30px;
+        margin-bottom: 20px;
       }
     }
   }
