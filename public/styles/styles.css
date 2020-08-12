@@ -71,7 +71,7 @@ body #about-me .intro {
 body #about-me .intro h2 {
   font-family: "Roboto Slab", serif;
   margin: 60px 0 40px 0;
-  font-size: 40px;
+  font-size: 50px;
 }
 body #about-me .intro p {
   font-family: "Roboto Slab", serif;
@@ -158,7 +158,7 @@ body #skills-sec {
 body #skills-sec h2 {
   font-family: "Roboto Slab", serif;
   margin: 60px 0 40px 0;
-  font-size: 40px;
+  font-size: 50px;
   color: #e0e7e9;
 }
 body #skills-sec main {
@@ -219,8 +219,8 @@ body #projects-sec .project .tech-stack {
   font-size: 20px;
 }
 body #projects-sec .project .project-description {
-  width: 70vw;
-  font-size: 16px;
+  width: 60vw;
+  font-size: 20px;
 }
 body #projects-sec #canopy {
   background-color: #568a87;
@@ -228,7 +228,7 @@ body #projects-sec #canopy {
 body #projects-sec #canopy div h3 {
   font-family: "Roboto Slab", serif;
   margin: 0;
-  font-size: 30px;
+  font-size: 45px;
   margin-bottom: 20px;
   color: white;
 }
@@ -244,7 +244,7 @@ body #projects-sec #scheduler {
 body #projects-sec #scheduler div h3 {
   font-family: "Roboto Slab", serif;
   margin: 0;
-  font-size: 30px;
+  font-size: 45px;
   margin-bottom: 20px;
   color: white;
 }
@@ -260,7 +260,7 @@ body #projects-sec #viral-clean {
 body #projects-sec #viral-clean div h3 {
   font-family: "Roboto Slab", serif;
   margin: 0;
-  font-size: 30px;
+  font-size: 45px;
   margin-bottom: 20px;
 }
 body #contact {
@@ -272,7 +272,7 @@ body #contact {
 body #contact h2 {
   font-family: "Roboto Slab", serif;
   margin: 60px 0 40px 0;
-  font-size: 40px;
+  font-size: 50px;
 }
 body #contact .email-phone {
   display: flex;

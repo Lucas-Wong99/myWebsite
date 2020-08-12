@@ -21,8 +21,8 @@
       font-size: 20px;
     }
     .project-description {
-      width: 70vw;
-      font-size: 16px;
+      width: 60vw;
+      font-size: 20px;
     }
   }
 
@@ -31,7 +31,7 @@
     div {
       h3 {
         @include textStyling;
-        font-size: 30px;
+        font-size: 45px;
         margin-bottom: 20px;
         color: white;
       }
@@ -49,7 +49,7 @@
     div {
       h3 {
         @include textStyling;
-        font-size: 30px;
+        font-size: 45px;
         margin-bottom: 20px;
         color: white;
       }
@@ -67,7 +67,7 @@
     div {
       h3 {
         @include textStyling;
-        font-size: 30px;
+        font-size: 45px;
         margin-bottom: 20px;
       }
     }
