@@ -40,6 +40,12 @@ nav {
         transform-origin: left;
       }
     }
+    @media (max-width: 575.98px) {
+      .nav-bar-item {
+        margin: 10px;
+        font-size: 12px;
+      }
+    }
   }
 }
 
@@ -82,6 +88,12 @@ nav {
       &:hover::after {
         transform: scaleX(1);
         transform-origin: left;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .nav-bar-item {
+        margin: 10px;
+        font-size: 12px;
       }
     }
   }

@@ -84,4 +84,61 @@
       }
     }
   }
+  @media (max-width: 575.98px) {
+    .intro {
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+      .show-info-button {
+        padding: 10px;
+      }
+    }
+
+    .hidden-info {
+      opacity: 0;
+      h3 {
+        font-size: 20px;
+      }
+      .education {
+        margin: 15px;
+        h4 {
+          font-size: 16px;
+        }
+        .edu-info {
+          div {
+            h5 {
+              font-size: 12px;
+            }
+          }
+
+          h6 {
+            font-size: 10px;
+          }
+        }
+      }
+      .work-experience {
+        h4 {
+          font-size: 16px;
+        }
+        .work-info {
+          div {
+            h5 {
+              font-size: 12px;
+            }
+          }
+
+          h6 {
+            font-size: 10px;
+          }
+          li {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }

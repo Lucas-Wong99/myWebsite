@@ -44,6 +44,12 @@ body nav ul .nav-bar-item:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
+@media (max-width: 575.98px) {
+  body nav ul .nav-bar-item {
+    margin: 10px;
+    font-size: 12px;
+  }
+}
 body .nav-scrolled {
   position: fixed;
   top: 0;
@@ -83,6 +89,12 @@ body .nav-scrolled ul .nav-bar-item:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
+@media (max-width: 575.98px) {
+  body .nav-scrolled ul .nav-bar-item {
+    margin: 10px;
+    font-size: 12px;
+  }
+}
 body header {
   display: flex;
   justify-content: center;
@@ -118,6 +130,23 @@ body header .title div h4 {
   font-size: 30px;
   font-family: "Roboto Slab", serif;
   color: #e5e5e5;
+}
+@media (max-width: 575.98px) {
+  body header .title {
+    display: flex;
+    flex-direction: column;
+  }
+  body header .title img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  body header .title div h2 {
+    font-size: 30px;
+  }
+  body header .title div h4 {
+    font-size: 20px;
+  }
 }
 body #about-me {
   display: flex;
@@ -212,6 +241,47 @@ body #about-me .hidden-info .work-experience .work-info li {
   margin: 0;
   font-size: 14px;
 }
+@media (max-width: 575.98px) {
+  body #about-me .intro h2 {
+    font-size: 30px;
+  }
+  body #about-me .intro p {
+    font-size: 18px;
+  }
+  body #about-me .intro .show-info-button {
+    padding: 10px;
+  }
+  body #about-me .hidden-info {
+    opacity: 0;
+  }
+  body #about-me .hidden-info h3 {
+    font-size: 20px;
+  }
+  body #about-me .hidden-info .education {
+    margin: 15px;
+  }
+  body #about-me .hidden-info .education h4 {
+    font-size: 16px;
+  }
+  body #about-me .hidden-info .education .edu-info div h5 {
+    font-size: 12px;
+  }
+  body #about-me .hidden-info .education .edu-info h6 {
+    font-size: 10px;
+  }
+  body #about-me .hidden-info .work-experience h4 {
+    font-size: 16px;
+  }
+  body #about-me .hidden-info .work-experience .work-info div h5 {
+    font-size: 12px;
+  }
+  body #about-me .hidden-info .work-experience .work-info h6 {
+    font-size: 10px;
+  }
+  body #about-me .hidden-info .work-experience .work-info li {
+    font-size: 12px;
+  }
+}
 body #skills-sec {
   display: flex;
   flex-direction: column;
@@ -255,6 +325,25 @@ body #skills-sec main .skills ul li {
   width: 90px;
   color: #e0e7e9;
   list-style: none;
+}
+@media (max-width: 575.98px) {
+  body #skills-sec h2 {
+    font-size: 30px;
+  }
+  body #skills-sec main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
+  body #skills-sec main .skills {
+    margin: 10px;
+    width: 90vw;
+  }
+  body #skills-sec main .skills ul li {
+    height: 65px;
+    width: 65px;
+    font-size: 14px;
+  }
 }
 body #projects-sec {
   display: flex;
@@ -305,6 +394,11 @@ body #projects-sec .project .project-description.appear {
   transform: translateX(0);
   opacity: 1;
 }
+@media (max-width: 575.98px) {
+  body #projects-sec .project div .image {
+    height: 200px;
+  }
+}
 body #projects-sec #canopy {
   background-color: #568a87;
 }
@@ -324,6 +418,18 @@ body #projects-sec #canopy .project-description {
   color: white;
   width: 60vw;
   font-size: 20px;
+}
+@media (max-width: 575.98px) {
+  body #projects-sec #canopy div h3 {
+    font-size: 30px;
+  }
+  body #projects-sec #canopy .tech-stack {
+    font-size: 16px;
+  }
+  body #projects-sec #canopy .project-description {
+    width: 80vw;
+    font-size: 14px;
+  }
 }
 body #projects-sec #scheduler {
   background-color: #354649;
@@ -345,6 +451,18 @@ body #projects-sec #scheduler .project-description {
   width: 60vw;
   font-size: 20px;
 }
+@media (max-width: 575.98px) {
+  body #projects-sec #scheduler div h3 {
+    font-size: 30px;
+  }
+  body #projects-sec #scheduler .tech-stack {
+    font-size: 16px;
+  }
+  body #projects-sec #scheduler .project-description {
+    width: 80vw;
+    font-size: 14px;
+  }
+}
 body #projects-sec #viral-clean {
   background-color: #a3c6c4;
 }
@@ -361,6 +479,18 @@ body #projects-sec #viral-clean .tech-stack {
 body #projects-sec #viral-clean .project-description {
   width: 60vw;
   font-size: 20px;
+}
+@media (max-width: 575.98px) {
+  body #projects-sec #viral-clean div h3 {
+    font-size: 30px;
+  }
+  body #projects-sec #viral-clean .tech-stack {
+    font-size: 16px;
+  }
+  body #projects-sec #viral-clean .project-description {
+    width: 80vw;
+    font-size: 14px;
+  }
 }
 body #contact {
   display: flex;
@@ -387,9 +517,11 @@ body #contact .icons {
 }
 body #contact .icons .fa-twitter {
   color: #00acee;
+  margin: 5px;
 }
 body #contact .icons .fa-linkedin {
   color: #4875b4;
+  margin: 5px;
 }
 body #contact .icons .fa-instagram {
   display: inline-block;
@@ -400,9 +532,16 @@ body #contact .icons .fa-instagram {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  margin: 5px;
 }
 body #contact .icons .fa-github {
   color: #838282;
+  margin: 5px;
+}
+@media (max-width: 575.98px) {
+  body #contact h2 {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

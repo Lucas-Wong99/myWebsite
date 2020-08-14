@@ -44,6 +44,15 @@
       }
     }
   }
+  @media (max-width: 575.98px) {
+    .project {
+      div {
+        .image {
+          height: 200px;
+        }
+      }
+    }
+  }
 
   #canopy {
     background-color: #568a87;
@@ -64,6 +73,20 @@
       color: white;
       width: 60vw;
       font-size: 20px;
+    }
+    @media (max-width: 575.98px) {
+      div {
+        h3 {
+          font-size: 30px;
+        }
+      }
+      .tech-stack {
+        font-size: 16px;
+      }
+      .project-description {
+        width: 80vw;
+        font-size: 14px;
+      }
     }
   }
 
@@ -87,6 +110,20 @@
       width: 60vw;
       font-size: 20px;
     }
+    @media (max-width: 575.98px) {
+      div {
+        h3 {
+          font-size: 30px;
+        }
+      }
+      .tech-stack {
+        font-size: 16px;
+      }
+      .project-description {
+        width: 80vw;
+        font-size: 14px;
+      }
+    }
   }
 
   #viral-clean {
@@ -105,6 +142,20 @@
     .project-description {
       width: 60vw;
       font-size: 20px;
+    }
+    @media (max-width: 575.98px) {
+      div {
+        h3 {
+          font-size: 30px;
+        }
+      }
+      .tech-stack {
+        font-size: 16px;
+      }
+      .project-description {
+        width: 80vw;
+        font-size: 14px;
+      }
     }
   }
 }
