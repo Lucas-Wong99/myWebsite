@@ -2,7 +2,7 @@
 
 #about-me {
   @include centerColumn;
-  background-color: #a3c6c4;
+  background-color: #e5e5e5;
 
   .intro {
     @include centerColumn;
@@ -19,7 +19,7 @@
     }
     .show-info-button {
       padding: 20px;
-      border: none;
+      border: solid 1px black;
       border-radius: 10px;
       background-color: #e5e5e5;
       outline: none;
