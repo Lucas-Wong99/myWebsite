@@ -1,33 +1,93 @@
 body {
   background-color: lightgray;
   margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 body nav {
   position: fixed;
   top: 0;
   z-index: 999;
   width: 100vw;
-  background-color: #e5e5e5;
+  background-color: black;
 }
 body nav ul {
   display: flex;
   justify-content: center;
   height: 70px;
   margin: 0;
+  list-style: none;
 }
 body nav ul .nav-bar-item {
-  list-style: none;
+  position: relative;
+  display: block;
   text-decoration: none;
   margin: 20px;
-  font-family: "Poppins", sans-serif;
   font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #e5e5e5;
+  transition: 0.5s;
+}
+body nav ul .nav-bar-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #e5e5e5;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+body nav ul .nav-bar-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+body .nav-scrolled {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  background-color: #e5e5e5;
+}
+body .nav-scrolled ul {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  margin: 0;
+}
+body .nav-scrolled ul .nav-bar-item {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
   color: black;
+  transition: 0.5s;
+}
+body .nav-scrolled ul .nav-bar-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: black;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+body .nav-scrolled ul .nav-bar-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 body header {
   display: flex;
   justify-content: center;
   padding-top: 70px;
-  background-color: #a3c6c4;
+  background-color: black;
   height: 100vh;
 }
 body header .title {
@@ -51,17 +111,19 @@ body header .title div {
 body header .title div h2 {
   font-size: 50px;
   font-family: "Roboto Slab", serif;
+  color: #e5e5e5;
 }
 body header .title div h4 {
   margin: 0;
   font-size: 30px;
   font-family: "Roboto Slab", serif;
+  color: #e5e5e5;
 }
 body #about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #6bc0c8;
+  background-color: #a3c6c4;
 }
 body #about-me .intro {
   display: flex;
@@ -212,16 +274,36 @@ body #projects-sec .project div {
   flex-direction: column;
   align-items: center;
 }
-body #projects-sec .project div img {
+body #projects-sec .project div .image {
+  border-radius: 10px;
   height: 500px;
+  opacity: 0;
+  filter: brightness(50%);
+  transition: opacity 250ms ease-in, filter 0.3s ease-in;
 }
-body #projects-sec .project .tech-stack {
-  margin: 5px;
-  font-size: 20px;
+body #projects-sec .project div .image.appear {
+  opacity: 1;
+}
+body #projects-sec .project div .image:hover {
+  filter: brightness(100%);
+}
+body #projects-sec .project .left-slide {
+  transform: translateX(-50%);
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+body #projects-sec .project .left-slide.appear {
+  transform: translateX(0);
+  opacity: 1;
 }
 body #projects-sec .project .project-description {
-  width: 60vw;
-  font-size: 20px;
+  transform: translateX(50%);
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+body #projects-sec .project .project-description.appear {
+  transform: translateX(0);
+  opacity: 1;
 }
 body #projects-sec #canopy {
   background-color: #568a87;
@@ -235,9 +317,13 @@ body #projects-sec #canopy div h3 {
 }
 body #projects-sec #canopy .tech-stack {
   color: white;
+  margin: 5px;
+  font-size: 20px;
 }
 body #projects-sec #canopy .project-description {
   color: white;
+  width: 60vw;
+  font-size: 20px;
 }
 body #projects-sec #scheduler {
   background-color: #354649;
@@ -251,9 +337,13 @@ body #projects-sec #scheduler div h3 {
 }
 body #projects-sec #scheduler .tech-stack {
   color: white;
+  margin: 5px;
+  font-size: 20px;
 }
 body #projects-sec #scheduler .project-description {
   color: white;
+  width: 60vw;
+  font-size: 20px;
 }
 body #projects-sec #viral-clean {
   background-color: #a3c6c4;
@@ -263,6 +353,14 @@ body #projects-sec #viral-clean div h3 {
   margin: 0;
   font-size: 45px;
   margin-bottom: 20px;
+}
+body #projects-sec #viral-clean .tech-stack {
+  margin: 5px;
+  font-size: 20px;
+}
+body #projects-sec #viral-clean .project-description {
+  width: 60vw;
+  font-size: 20px;
 }
 body #contact {
   display: flex;

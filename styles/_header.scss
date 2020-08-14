@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 70px;
-  background-color: #a3c6c4;
+  background-color: black;
   height: 100vh;
   .title {
     display: flex;
@@ -24,11 +24,13 @@ header {
       h2 {
         font-size: 50px;
         font-family: "Roboto Slab", serif;
+        color: #e5e5e5;
       }
       h4 {
         margin: 0;
         font-size: 30px;
         font-family: "Roboto Slab", serif;
+        color: #e5e5e5;
       }
     }
   }
