@@ -25,8 +25,8 @@ body nav ul .nav-bar-item {
   margin: 20px;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
-  color: #e5e5e5;
   transition: 0.5s;
+  color: #e5e5e5;
 }
 body nav ul .nav-bar-item::after {
   content: "";
@@ -35,10 +35,10 @@ body nav ul .nav-bar-item::after {
   height: 3px;
   top: 100%;
   left: 0;
-  background: #e5e5e5;
   transition: transform 0.5s;
   transform: scaleX(0);
   transform-origin: right;
+  background: #e5e5e5;
 }
 body nav ul .nav-bar-item:hover::after {
   transform: scaleX(1);
@@ -62,6 +62,7 @@ body .nav-scrolled ul {
   justify-content: center;
   height: 70px;
   margin: 0;
+  list-style: none;
 }
 body .nav-scrolled ul .nav-bar-item {
   position: relative;
@@ -70,8 +71,8 @@ body .nav-scrolled ul .nav-bar-item {
   margin: 20px;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
-  color: black;
   transition: 0.5s;
+  color: black;
 }
 body .nav-scrolled ul .nav-bar-item::after {
   content: "";
@@ -80,10 +81,10 @@ body .nav-scrolled ul .nav-bar-item::after {
   height: 3px;
   top: 100%;
   left: 0;
-  background: black;
   transition: transform 0.5s;
   transform: scaleX(0);
   transform-origin: right;
+  background: black;
 }
 body .nav-scrolled ul .nav-bar-item:hover::after {
   transform: scaleX(1);
@@ -108,6 +109,7 @@ body header .title {
   margin-top: 50px;
   height: 350px;
   opacity: 0;
+  z-index: 500;
 }
 body header .title img {
   height: 350px;
@@ -121,8 +123,9 @@ body header .title div {
   margin-left: 20px;
 }
 body header .title div h2 {
-  font-size: 50px;
   font-family: "Roboto Slab", serif;
+  margin: 60px 0 40px 0;
+  font-size: 50px;
   color: #e5e5e5;
 }
 body header .title div h4 {

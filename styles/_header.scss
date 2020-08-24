@@ -1,3 +1,5 @@
+@import "helpers";
+
 header {
   display: flex;
   justify-content: center;
@@ -10,20 +12,18 @@ header {
     margin-top: 50px;
     height: 350px;
     opacity: 0;
+    z-index: 500;
     img {
       height: 350px;
       width: 350px;
       border-radius: 50%;
     }
     div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include centerColumn();
       margin-left: 20px;
 
       h2 {
-        font-size: 50px;
-        font-family: "Roboto Slab", serif;
+        @include sectionHeader();
         color: #e5e5e5;
       }
       h4 {

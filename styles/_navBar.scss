@@ -1,43 +1,63 @@
-nav {
+@mixin navStyle {
   position: fixed;
   top: 0;
   z-index: 999;
   width: 100vw;
+}
+
+@mixin ulStyle {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin navItemStyle {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s;
+}
+
+@mixin navItemAfterStyle {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+@mixin hoverAction {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+nav {
+  @include navStyle();
   background-color: black;
 
   ul {
-    display: flex;
-    justify-content: center;
-    height: 70px;
-    margin: 0;
-    list-style: none;
+    @include ulStyle();
 
     .nav-bar-item {
-      position: relative;
-      display: block;
-      text-decoration: none;
-      margin: 20px;
-      font-size: 20px;
-      font-family: "Poppins", sans-serif;
+      @include navItemStyle();
       color: #e5e5e5;
-      transition: 0.5s;
 
       &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        top: 100%;
-        left: 0;
+        @include navItemAfterStyle();
         background: #e5e5e5;
-        transition: transform 0.5s;
-        transform: scaleX(0);
-        transform-origin: right;
       }
 
       &:hover::after {
-        transform: scaleX(1);
-        transform-origin: left;
+        @include hoverAction();
       }
     }
     @media (max-width: 575.98px) {
@@ -50,44 +70,23 @@ nav {
 }
 
 .nav-scrolled {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100vw;
+  @include navStyle();
   background-color: #e5e5e5;
 
   ul {
-    display: flex;
-    justify-content: center;
-    height: 70px;
-    margin: 0;
+    @include ulStyle();
 
     .nav-bar-item {
-      position: relative;
-      display: block;
-      text-decoration: none;
-      margin: 20px;
-      font-size: 20px;
-      font-family: "Poppins", sans-serif;
+      @include navItemStyle();
       color: black;
-      transition: 0.5s;
 
       &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        top: 100%;
-        left: 0;
+        @include navItemAfterStyle();
         background: black;
-        transition: transform 0.5s;
-        transform: scaleX(0);
-        transform-origin: right;
       }
 
       &:hover::after {
-        transform: scaleX(1);
-        transform-origin: left;
+        @include hoverAction();
       }
     }
     @media (max-width: 575.98px) {

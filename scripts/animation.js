@@ -9,10 +9,12 @@ var camera = new THREE.PerspectiveCamera(
 camera.position.z = 5;
 
 var renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setClearColor("#e5e5e5");
+renderer.setClearColor("grey");
 renderer.setSize(window.innerWidth, window.innerHeight);
 
-document.body.appendChild(renderer.domElement);
+const header = document.querySelector("#home");
+
+header.appendChild(renderer.domElement);
 
 window.addEventListener("resize", () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
