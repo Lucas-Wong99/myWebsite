@@ -6,7 +6,7 @@ const fadeIn = document.querySelectorAll(".image");
 const sliders = document.querySelectorAll(".slider");
 
 const navOptions = {
-  rootMargin: "0px 0px -600px 0px"
+  rootMargin: "0px 0px -650px 0px"
 };
 
 const navObserver = new IntersectionObserver(function (entries, aboutObserver) {

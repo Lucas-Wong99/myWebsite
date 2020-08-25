@@ -2,6 +2,7 @@ body {
   background-color: lightgray;
   margin: 0;
   width: 100vw;
+  position: relative;
   overflow-x: hidden;
 }
 body nav {
@@ -17,6 +18,7 @@ body nav ul {
   height: 70px;
   margin: 0;
   list-style: none;
+  padding: 0;
 }
 body nav ul .nav-bar-item {
   position: relative;
@@ -46,7 +48,7 @@ body nav ul .nav-bar-item:hover::after {
 }
 @media (max-width: 575.98px) {
   body nav ul .nav-bar-item {
-    margin: 10px;
+    margin: 25px 6px 25px 6px;
     font-size: 12px;
   }
 }
@@ -63,6 +65,7 @@ body .nav-scrolled ul {
   height: 70px;
   margin: 0;
   list-style: none;
+  padding: 0;
 }
 body .nav-scrolled ul .nav-bar-item {
   position: relative;
@@ -92,24 +95,31 @@ body .nav-scrolled ul .nav-bar-item:hover::after {
 }
 @media (max-width: 575.98px) {
   body .nav-scrolled ul .nav-bar-item {
-    margin: 10px;
+    margin: 25px 6px 25px 6px;
     font-size: 12px;
   }
 }
 body header {
   display: flex;
   justify-content: center;
+  background: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   padding-top: 70px;
-  background-color: black;
   height: 100vh;
 }
 body header .title {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  height: 350px;
+  height: 100vh;
+  width: 100vw;
+  margin-top: -100px;
+  padding-bottom: 100px;
   opacity: 0;
-  z-index: 500;
+  backdrop-filter: brightness(20%);
 }
 body header .title img {
   height: 350px;
@@ -140,15 +150,18 @@ body header .title div h4 {
     flex-direction: column;
   }
   body header .title img {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
   }
+  body header .title div {
+    margin: 0;
+  }
   body header .title div h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
   body header .title div h4 {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 body #about-me {
@@ -400,6 +413,7 @@ body #projects-sec .project .project-description.appear {
 @media (max-width: 575.98px) {
   body #projects-sec .project div .image {
     height: 200px;
+    width: 325px;
   }
 }
 body #projects-sec #canopy {
@@ -545,6 +559,10 @@ body #contact .icons .fa-github {
   body #contact h2 {
     font-size: 30px;
   }
+}
+
+html {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */
