@@ -1,23 +1,24 @@
 @import "helpers";
 
 #about-me {
-  @include centerColumn;
+  @include centerColumn();
   background-color: #e5e5e5;
 
   .intro {
-    @include centerColumn;
+    @include centerColumn();
     padding-bottom: 60px;
     h2 {
-      @include sectionHeader;
+      @include sectionHeader();
     }
 
     p {
-      @include textStyling;
+      @include textStyling();
       width: 60vw;
       margin: 10px;
       font-size: 20px;
     }
     .show-info-button {
+      @include textStyling();
       padding: 20px;
       border: solid 1px black;
       border-radius: 10px;
@@ -31,13 +32,13 @@
   .hidden-info {
     opacity: 0;
     h3 {
-      @include textStyling;
+      @include textStyling();
       font-size: 30px;
     }
     .education {
       margin: 15px;
       h4 {
-        @include textStyling;
+        @include textStyling();
         font-size: 26px;
       }
       .edu-info {
@@ -46,7 +47,7 @@
           display: flex;
           justify-content: space-between;
           h5 {
-            @include textStyling;
+            @include textStyling();
             font-size: 20px;
           }
         }
@@ -59,7 +60,7 @@
     }
     .work-experience {
       h4 {
-        @include textStyling;
+        @include textStyling();
         font-size: 26px;
       }
       .work-info {
@@ -68,17 +69,17 @@
           display: flex;
           justify-content: space-between;
           h5 {
-            @include textStyling;
+            @include textStyling();
             font-size: 20px;
           }
         }
 
         h6 {
-          @include textStyling;
+          @include textStyling();
           font-size: 16px;
         }
         li {
-          @include textStyling;
+          @include textStyling();
           font-size: 14px;
         }
       }

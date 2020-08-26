@@ -6,7 +6,7 @@
 
   h2 {
     @include sectionHeader;
-    color: #e0e7e9;
+    color: #e5e5e5;
   }
   main {
     display: flex;
@@ -14,30 +14,29 @@
 
     .skills {
       @include centerColumn;
-      background-color: #8d9aa5;
+      background-color: #e5e5e5;
       border-radius: 10px;
       margin: 0 20px 0 20px;
       width: 25vw;
 
       h3 {
-        color: #e0e7e9;
+        @include textStyling();
+        margin: 20px;
+        font-size: 26px;
+        color: black;
+      }
+
+      .icons {
+        display: flex;
+        img {
+          height: 80px;
+        }
       }
 
       ul {
-        display: flex;
-        flex-wrap: wrap;
-
         li {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border: solid 1px #e0e7e9;
-          border-radius: 50%;
-          margin: 10px;
-          height: 90px;
-          width: 90px;
-          color: #e0e7e9;
-          list-style: none;
+          @include textStyling();
+          margin: 20px 20px 40px 20px;
         }
       }
     }
