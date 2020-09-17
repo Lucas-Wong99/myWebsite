@@ -17,7 +17,7 @@
       background-color: #e5e5e5;
       border-radius: 10px;
       margin: 0 20px 0 20px;
-      width: 25vw;
+      width: 28vw;
 
       h3 {
         @include textStyling();
@@ -41,6 +41,24 @@
       }
     }
   }
+  @media (max-width: 1180px) {
+    main {
+      .skills {
+        margin: 5px;
+        width: 31vw;
+      }
+    }
+  }
+  @media (max-width: 1060px) {
+    main {
+      display: flex;
+      flex-direction: column;
+      .skills {
+        margin: 20px;
+        width: 90vw;
+      }
+    }
+  }
   @media (max-width: 575.98px) {
     h2 {
       font-size: 30px;
@@ -53,13 +71,9 @@
       .skills {
         margin: 10px;
         width: 90vw;
-
         ul {
-          li {
-            height: 65px;
-            width: 65px;
-            font-size: 14px;
-          }
+          display: flex;
+          flex-direction: column;
         }
       }
     }

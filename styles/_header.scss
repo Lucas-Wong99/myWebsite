@@ -41,11 +41,18 @@ header {
       }
     }
   }
-  @media (max-width: 575.98px) {
+  @media (max-width: 800px) {
     .title {
       display: flex;
       flex-direction: column;
-
+      img {
+        height: 300px;
+        width: 300px;
+      }
+    }
+  }
+  @media (max-width: 575.98px) {
+    .title {
       img {
         height: 200px;
         width: 200px;

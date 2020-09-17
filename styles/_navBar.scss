@@ -61,6 +61,11 @@ nav {
         @include hoverAction();
       }
     }
+    @media (max-width: 800px) {
+      .nav-bar-item {
+        font-size: 14px;
+      }
+    }
     @media (max-width: 575.98px) {
       .nav-bar-item {
         margin: 25px 6px 25px 6px;
@@ -88,6 +93,11 @@ nav {
 
       &:hover::after {
         @include hoverAction();
+      }
+    }
+    @media (max-width: 800px) {
+      .nav-bar-item {
+        font-size: 14px;
       }
     }
     @media (max-width: 575.98px) {
