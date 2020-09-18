@@ -20,5 +20,51 @@
   margin: 15px;
   padding: 20px;
   border-radius: 10px;
-  border: 2px solid black;
+  background-color: white;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+//Nav Bar Mixins
+
+@mixin navStyle {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+}
+
+@mixin ulStyle {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+@mixin navItemStyle {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s;
+}
+
+@mixin navItemAfterStyle {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+@mixin hoverAction {
+  transform: scaleX(1);
+  transform-origin: left;
 }
