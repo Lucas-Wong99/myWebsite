@@ -19,7 +19,6 @@ header {
     margin-top: -100px;
     padding-bottom: 100px;
     opacity: 0;
-    backdrop-filter: brightness(20%);
     img {
       height: 350px;
       width: 350px;
@@ -39,6 +38,16 @@ header {
         font-family: "Roboto Slab", serif;
         color: #e5e5e5;
       }
+    }
+  }
+  //Support for safari(backdrop-filter is a new stying method that isn't supported by all browsers)
+  @supports (
+    (-webkit-backdrop-filter: brightness(20%)) or
+      (backdrop-filter: brightness(20%))
+  ) {
+    .title {
+      -webkit-backdrop-filter: brightness(20%);
+      backdrop-filter: brightness(20%);
     }
   }
   @media (max-width: 800px) {

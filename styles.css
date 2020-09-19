@@ -129,7 +129,6 @@ body header .title {
   margin-top: -100px;
   padding-bottom: 100px;
   opacity: 0;
-  backdrop-filter: brightness(20%);
 }
 body header .title img {
   height: 350px;
@@ -153,6 +152,12 @@ body header .title div h4 {
   font-size: 30px;
   font-family: "Roboto Slab", serif;
   color: #e5e5e5;
+}
+@supports (-webkit-backdrop-filter: brightness(20%)) or (backdrop-filter: brightness(20%)) {
+  body header .title {
+    -webkit-backdrop-filter: brightness(20%);
+    backdrop-filter: brightness(20%);
+  }
 }
 @media (max-width: 800px) {
   body header .title {
