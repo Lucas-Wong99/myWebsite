@@ -206,8 +206,8 @@ body #about-me .intro p {
   font-family: "Roboto Slab", serif;
   margin: 0;
   width: 60vw;
-  margin: 20px;
-  padding: 20px;
+  margin: 0 20px 20px 20px;
+  padding: 30px;
   border-radius: 10px;
   font-size: 20px;
   background-color: white;

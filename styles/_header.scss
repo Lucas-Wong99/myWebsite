@@ -41,6 +41,7 @@ header {
     }
   }
   //Support for safari(backdrop-filter is a new stying method that isn't supported by all browsers)
+  //May need to be updated in the near future
   @supports (
     (-webkit-backdrop-filter: brightness(20%)) or
       (backdrop-filter: brightness(20%))
